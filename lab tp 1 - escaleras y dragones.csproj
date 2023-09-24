@@ -91,5 +91,14 @@
   <ItemGroup>
     <None Include="resources\caballero_rojo_-_60_px- bg1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\caballero_verde_60px - bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\caballero_verde_50px - bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\caballero_verde_45px_-_bg.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

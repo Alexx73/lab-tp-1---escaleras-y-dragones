@@ -69,5 +69,35 @@ namespace lab_tp_1___escaleras_y_dragones.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap caballero_verde_45px___bg {
+            get {
+                object obj = ResourceManager.GetObject("caballero_verde_45px_-_bg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap caballero_verde_50px___bg {
+            get {
+                object obj = ResourceManager.GetObject("caballero_verde_50px - bg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap caballero_verde_60px___bg {
+            get {
+                object obj = ResourceManager.GetObject("caballero_verde_60px - bg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
