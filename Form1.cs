@@ -16,6 +16,15 @@ namespace lab_tp_1___escaleras_y_dragones
         {
             InitializeComponent();
 
+            // posicionar picturebox inicial
+
+            // Calcula la nueva posición del PictureBox
+            int nuevaX = 0;
+            int nuevaY = 5;
+
+            // Establece la nueva posición
+            pictureBox1.Location = new Point(nuevaX, nuevaY);
+
             // Tamaño de cada cuadrícula
             int gridSize = 50;
 
@@ -42,13 +51,27 @@ namespace lab_tp_1___escaleras_y_dragones
                 }
             } // fin Cuadricula
 
+           
 
 
 
 
         }
 
+        private void btnAvanzar_Click(object sender, EventArgs e)
+        {
+            // Este metodo mueve al caballero horizontalmente, sumandole 50 a nuevaX
 
+            // Calcula la nueva posición del PictureBox
+            int nuevaX = pictureBox1.Left + (50);
+            int nuevaY = pictureBox1.Top;
+
+            if (nuevaX >= 450) nuevaX = 450;
+
+            // Establece la nueva posición
+            pictureBox1.Location = new Point(nuevaX, nuevaY);
+
+        }
     }
     }
 
