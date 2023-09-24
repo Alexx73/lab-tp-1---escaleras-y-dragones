@@ -19,6 +19,8 @@ namespace lab_tp_1___escaleras_y_dragones
 
         public void IniciarJuego()
         {
+            // tirar dado
+            // static Random dado = new Random(); a= dado.Next(1, 7);
 
         }
 

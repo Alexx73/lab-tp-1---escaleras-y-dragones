@@ -29,13 +29,31 @@ namespace lab_tp_1___escaleras_y_dragones
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.panelTablero = new System.Windows.Forms.Panel();
+            this.SuspendLayout();
+            // 
+            // panelTablero
+            // 
+            this.panelTablero.Location = new System.Drawing.Point(2, 55);
+            this.panelTablero.Name = "panelTablero";
+            this.panelTablero.Size = new System.Drawing.Size(750, 346);
+            this.panelTablero.TabIndex = 0;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(917, 461);
+            this.Controls.Add(this.panelTablero);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Panel panelTablero;
     }
 }
 
