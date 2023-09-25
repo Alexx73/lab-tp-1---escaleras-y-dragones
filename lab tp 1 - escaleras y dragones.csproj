@@ -100,5 +100,11 @@
   <ItemGroup>
     <None Include="resources\caballero_verde_45px_-_bg.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\dragon_rojo_60x60-bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\dragon_verde_60x60-bg.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

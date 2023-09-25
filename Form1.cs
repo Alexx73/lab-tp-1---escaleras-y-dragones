@@ -12,8 +12,19 @@ namespace lab_tp_1___escaleras_y_dragones
 {
     public partial class Form1 : Form
     {
-        int cabVerdeX = 5;
-        int cabVerdeY = 8;
+        int caballeroVerdeX = 5;
+        int caballeroVerdeY = 58;
+
+        int caballeroRojoX = 3;
+        int caballeroRojoY = 5;
+
+
+
+        int dragonRojoY = 161;
+        int dragonRojoX = 4;
+
+        int dragonVerdeY = 205;
+        int dragonVerdeX = 2;
 
         public Form1()
         {
@@ -22,17 +33,19 @@ namespace lab_tp_1___escaleras_y_dragones
             // posicionar picturebox inicial
 
             // Calcula la nueva posición del PictureBox
-            int nuevaX = 3;
-            int nuevaY = 5;
+            //int caballeroRojoX = 3;
+           // int caballeroRojoY = 5;
 
            
 
             // Establece la nueva posición
-            pictureBox1.Location = new Point(nuevaX, nuevaY);
-            pictureBox1.BackColor = Color.Transparent;
+            pbCaballeroRojo.Location = new Point(caballeroRojoX, caballeroRojoY);
+            pbCaballeroRojo.BackColor = Color.Transparent;
+            pbDragonRojo.Location = new Point(dragonRojoX, dragonRojoY);
 
-            pBCaballeroVerde.Location = new Point(cabVerdeX, cabVerdeY);
+            pBCaballeroVerde.Location = new Point(caballeroVerdeX, caballeroVerdeY);
             pBCaballeroVerde.BackColor = Color.Transparent;
+            pbDragonVerde.Location = new Point(dragonVerdeX, dragonVerdeY);
 
             // Tamaño de cada cuadrícula
             int gridSize = 50;
@@ -76,13 +89,16 @@ namespace lab_tp_1___escaleras_y_dragones
             // Este metodo mueve al caballero horizontalmente, sumandole 50 a nuevaX
 
             // Calcula la nueva posición del PictureBox
-            int nuevaX = pictureBox1.Left + (50);
-            int nuevaY = pictureBox1.Top;
+            caballeroRojoX = pbCaballeroRojo.Left + (50);
+            caballeroRojoY = pbCaballeroRojo.Top;
 
-            if (nuevaX >= 450) nuevaX = 450;
+            dragonRojoX = caballeroRojoX;
+
+            if (caballeroRojoX >= 450) caballeroRojoX = 450;
 
             // Establece la nueva posición
-            pictureBox1.Location = new Point(nuevaX, nuevaY);
+            pbCaballeroRojo.Location = new Point(caballeroRojoX, caballeroRojoY);
+            pbDragonRojo.Location = new Point(dragonRojoX, dragonRojoY);
 
         }
 
@@ -91,13 +107,15 @@ namespace lab_tp_1___escaleras_y_dragones
             // Este metodo mueve al caballero horizontalmente, sumandole 50 a nuevaX
 
             // Calcula la nueva posición del PictureBox
-            cabVerdeX = pBCaballeroVerde.Left + (50);
+            caballeroVerdeX = pBCaballeroVerde.Left + (50);
+            dragonVerdeX = caballeroVerdeX;
            
 
-            if (cabVerdeX >= 450) cabVerdeX = 450;
+            if (caballeroVerdeX >= 450) caballeroVerdeX = 450;
 
             // Establece la nueva posición
-            pBCaballeroVerde.Location = new Point(cabVerdeX,cabVerdeY );
+            pBCaballeroVerde.Location = new Point(caballeroVerdeX,caballeroVerdeY );
+            pbDragonVerde.Location = new Point(dragonVerdeX, dragonVerdeY);
 
         }
     }
